@@ -43,9 +43,7 @@ namespace Sitecore.DataExchange.Sfmc.Custom.Activities.Controllers
                     {
                         inArguments = new object[]
                         {
-                            new { contactIdentifier="{{Contact.Key}}"},
-                            new { FirstName="{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
-                            new { LastName="{{Contact.Attribute.JourneyEntrySource.LastName}}"},
+                            new { contactIdentifier="{{Contact.Key}}"}
                         },
                         url= $"{host}/api/sfmc/execute",
                     }
